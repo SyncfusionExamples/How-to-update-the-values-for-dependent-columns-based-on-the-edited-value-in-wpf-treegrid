@@ -1,6 +1,6 @@
-In [WPF SfTreeGrid](https://www.syncfusion.com/wpf-controls/treegrid){target="_blank"}, it is possible to change the value in one column based on the value edited in another column by utilizing the `CurrentCellValidated` event. This event allows you to access the current cell's row data and update the necessary column value based on specific conditions.
+In [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) (SfTreeGrid), it is possible to change the value in one column based on the value edited in another column by utilizing the `CurrentCellValidated` event. This event allows you to access the current cell's row data and update the necessary column value based on specific conditions.
 
-**Step 1:** **Subscribe to the CurrentCellValidated Event**: In the constructor of your main window, subscribe to the `CurrentCellValidated` event of the SfTreeGrid.
+**Step 1:** **Subscribe to the CurrentCellValidated Event**: In the constructor of your main window, subscribe to the `CurrentCellValidated` event of the TreeGrid.
  
  ```csharp
 public MainWindow()
@@ -21,13 +21,8 @@ private void TreeGrid_CurrentCellValidated(object sender, TreeGridCurrentCellVal
     }                        
 } 
  ```
-
-**Output:**
 The above implementation will automatically update the `Salary` column whenever the `BasicPay` or `Reduction` columns are modified.
 
-  
- ![c2zBvcs8AX.gif](https://support.syncfusion.com/kb/agent/attachment/article/16474/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI1MDIxIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.dGOv_49CZyFOdhSj2D2f8ALQNuP0sNWpEDPOPSfJYwA)
+ ![Data validation](c2zBvcs8AX.gif)
  
- 
-
-Take a moment to peruse the [WPF-SfTreeGrid Data Validation](https://help.syncfusion.com/wpf/treegrid/data-validation){target="_blank"}, to learn more about the Data Validation with examples.
+Take a moment to peruse the [WPF TreeGrid-Data Validation](https://help.syncfusion.com/wpf/treegrid/data-validation), to learn more about the Data Validation with examples.
